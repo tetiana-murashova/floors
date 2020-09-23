@@ -100,18 +100,6 @@
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
 }
-.my_button {
-    width: 10rem;
-    height: 3rem;
-    background-color: #c29525;
-    border: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
 
 @keyframes moveBanner {
     0% {
@@ -145,7 +133,7 @@
 }
 
 .floor-image {
-    width: 300px;
+    width: 280px;
 }
 
 @media (max-width: 800px) {
@@ -206,27 +194,12 @@
 
 /* end of materials */
 
-/* projects */
 
-.my_button_2 {
-    width: 10rem;
-    height: 3rem;
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: #c29525;
-    border-radius: 0.3rem;
-    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-}
+/* textures */
 
-.my_button_2:hover {
-    background-color: #c29525;
-    color: #eee;
-}
+/* end of textures */
 
-/* end of projects */
+
 
 /*contact form*/
 
@@ -326,15 +299,12 @@
 }
 
 .submit-btn {
-    width: 25rem;
+    width: 80%;
     height: 3rem;
     background-color: #c29525;
     color: #fff;
     border: none;
     margin-top: 1rem;
-    font-family: "Muli", serif;
-    font-size: 1rem;
-    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     cursor: pointer;
