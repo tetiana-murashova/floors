@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+/*body {*/
+/*    overflow: hidden;*/
+/*}*/
+
 .space {
     height: 150px;
 }
@@ -15,6 +19,7 @@
 .navbar-brand img {
     width: 80%;
 }
+
 
 .navbar {
     /*background-color: #c29525;*/
