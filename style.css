@@ -1,3 +1,9 @@
+:root {
+    --main-color: rgb(52, 85, 98);
+    --second-color: rgb(60, 110, 125);
+    --light-color: rgb(147, 166, 174)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +13,10 @@
     text-decoration: none;
 }
 
-/*body {*/
-/*    overflow: hidden;*/
-/*}*/
+html,
+body {
+    overflow-x: hidden;
+}
 
 .space {
     height: 150px;
@@ -22,10 +29,8 @@
 
 
 .navbar {
-    /*background-color: #c29525;*/
-    background-color: rgba(192, 148, 52, 0.9);
+    background-color: var(--main-color);
 }
-
 /* end of navigation */
 
 /* Banner */
@@ -93,7 +98,7 @@
 .banner button{
     width: 13rem;
     height: 3rem;
-    background-color: #c29525;
+    background-color: var(--main-color);
     border: none;
     font-size: 1rem;
     text-transform: uppercase;
@@ -116,22 +121,47 @@
 }
 
 /* End of banner */
+/*3 icons*/
+.three-icon {
+    width: 80%;
+    position: relative;
+    top: -50px;
+}
+
+.three-icon-1 {
+    background-color: rgb(47, 47, 47);
+    height: 360px;
+}
+
+.three-icon-2 {
+    background-color: var(--second-color);
+    height: 360px;
+}
+
+.three-icon-3 {
+    background-color: rgb(200, 200, 200);
+    height: 360px;
+}
+
+    /*end of 3 icons*/
 
 /* About Us*/
 
 .underline {
     width: 200px;
     height: 3px;
-    background-color: #c29525;
+    background-color: var(--light-color);
 }
 
 .gallery_background {
     width: 90%;
     height: 150px;
-    background-color: rgba(192, 148, 52, 0.7);
+    background-color: var(--second-color);
 }
 
 .gallery {
+    width: 100%;
+    overflow-x: hidden;
     position: relative;
     top: -50px;
 }
@@ -145,6 +175,7 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
 }
 
@@ -158,13 +189,18 @@
 .map img {
     width: 100%;
 }
+
+.suburbs {
+    font-size: 1.6rem;
+    color: var(--second-color);
+}
 /* end of map */
 
-/* materials */
+/* projects */
 .material {
     width: 100%;
-    height: 100%;
-    background-color: rgba(192, 148, 52, 0.7);
+    overflow: visible;
+    background-color: var(--main-color);
 }
 
 .images {
@@ -172,7 +208,7 @@
     top: 50px;
     left: 50px;
     width: 100%;
-    height: 100%;
+    overflow: hidden;
 }
 
 .choose_color-btn {
@@ -195,22 +231,32 @@
     transition: margin-left .5s;
 }
 
-
-/* end of materials */
-
-
-/* textures */
-
 /* end of textures */
 
+/* project gallery*/
 
+.project {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 3px;
+}
+
+.project-img img {
+    width: 100%;
+
+}
+
+/*end of project gallery*/
 
 /*contact form*/
 
 .contact {
     width: 100%;
     height: 100vh;
-    background-color: rgba(192, 148, 52, 0.6);
+    background-color: var(--second-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +264,7 @@
 
 .contact-wrapper {
     width: 60%;
-    height: 30rem;
+    height: 35rem;
     display: flex;
     box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.5);
 }
@@ -240,7 +286,7 @@
     font-size: 3rem;
     font-weight: 300;
     color: #272727;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -262,16 +308,16 @@
     border-bottom: 0.2rem dashed #636363;
     margin: 1rem 0;
     padding: 1rem 1rem 1rem 0;
-    font-size: 0.6rem;
+    font-size: 1.5rem;
     color: #4b4b4b;
 }
 
 .input-group input {
-    height: 2rem;
+    height: 3rem;
 }
 
 .input-group textarea {
-    max-height: 4rem;
+    max-height: 7rem;
     max-width: 35rem;
 }
 
@@ -282,8 +328,9 @@
 .input-group label {
     position: absolute;
     left: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #4b4b4b;
+    padding-bottom: .7rem;
     text-transform: uppercase;
     pointer-events: none;
     transition: all 0.3s;
@@ -294,18 +341,18 @@
 }
 
 .message {
-    bottom: 4rem;
+    bottom: 6rem;
 }
 
 .field:focus ~ label {
     transform: translateY(-1rem);
-    font-size: 0.2rem;
+    font-size: 0.8rem;
 }
 
 .submit-btn {
     width: 80%;
     height: 3rem;
-    background-color: #c29525;
+    background-color: var(--second-color);
     color: #fff;
     border: none;
     margin-top: 1rem;
@@ -315,26 +362,22 @@
     text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
-
+/*end of contact form*/
 
 
 /* google maps*/
 .mapouter{
     position:relative;
-    /*text-align:right;*/
     height:500px;
     width:100vw;
 }
 .gmap_canvas {
     overflow:hidden;
-    /*background:none!important;*/
     height:500px;
     width:100vw;
 }
 
 /*end of google maps*/
-
-/*end of contact form*/
 
 .scroll-btn {
     position: fixed;
@@ -342,7 +385,7 @@
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background-color: #e2b646;
+    background-color: var(--second-color);
     font-size: 2rem;
     color: #fff;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);

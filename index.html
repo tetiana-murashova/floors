@@ -9,12 +9,6 @@
 
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- Bootstrap CSS -->
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
-
-
-
     <!--end of bootstrap-->
 
 <!--    scroll  -->
@@ -41,9 +35,9 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Materials</a>
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link mx-1" href="#">MATERIALS</a>
+            <a class="nav-link mx-1" href="#contacts">CONTACTS</a>
             <a class="nav-link" href="#" ><i class="fab  fa-facebook-f px-1"></i>Facebook</a>
             <a class="nav-link"  href="tel:0432626446" target="_self" ><i class="fas  fa-spin fa-phone px-1"></i> 0432 626 446</a>
 
@@ -61,44 +55,74 @@
     <div class="banner">
         <h1>JB Epoxy Floors</h1>
         <p>The best epoxy floor you have ever seen.</p>
-        <button  onclick="document.location='#projects'">Discover now</button>
+        <button  onclick="document.location='#contacts'">Get a quote</button>
     </div>
 </header>
 
 <!-- end of banner -->
 
+<!--three icons-->
+<div class="row text-center three-icon m-auto">
+
+    <div class="pt-5 col-md-4 col-sm-10 m-auto three-icon-1">
+        <div class="mb-5 text-light">
+            <i class="fas fa-tint fa-6x mb-3"></i>
+            <h3>Oil and fuel resistant</h3>
+        </div>
+    </div>
+
+    <div class="pt-5 col-md-4 col-sm-10 m-auto three-icon-2">
+        <div class="mb-5 text-light">
+            <i class="fas fa-paint-roller fa-6x  mb-3"></i>
+            <h3>Anti slip and easy to maintain</h3>
+        </div>
+    </div>
+
+    <div class="pt-5 col-md-4 col-sm-10 m-auto three-icon-3">
+        <div class="mb-5 text-dark">
+            <i class="fas fa-chevron-down fa-6x mb-3"></i>
+            <h3>Modern and long lasting</h3>
+        </div>
+    </div>
+
+</div>
+
+<!--end of three icons-->
+
 <!-- about us -->
+<div class="container">
 <div>
     <p class="pt-5 text-center m-3 display-4">About Us</p>
     <div class="underline m-auto"></div>
 </div>
-    <p class="p-5 col-9 m-auto text-center"> We are specialized in preparation and application of all types of  Industrial Epoxy Floor Coating finishes to concrete floors. The Epoxy Floor Coatings we offer are hard wearing, slip resistance resin base products that are functional, easy to clean and maintain.
+    <p class="py-5 my-3 mx-auto text-center"> We are specialized in preparation and application of all types of  Industrial Epoxy Floor Coating finishes to concrete floors. The Epoxy Floor Coatings we offer are hard wearing, slip resistance resin base products that are functional, easy to clean and maintain.
 <br /><br />
         Our company's focus is to provide high-level services using the finest quality epoxy flooring materials that will exceed your expectations in every field. Our qualified staff, experienced estimators and management team are committed to ensuring customer satisfaction, from the time we receive your inquiry, all the way to your project's completion.
     </p>
+</div>
 <!--end of about us -->
 
 <!--map-->
 <div class="container my-5">
 
-    <div class="text-center h4">Ballarat</div>
+    <div class="text-center suburbs">Ballarat</div>
 
     <div class="row justify-content-between align-item-center">
-        <div class="col text-center h4">Echuca</div>
-        <div class="col text-center h4">Shepparton</div>
+        <div class="col text-center suburbs">Echuca</div>
+        <div class="col text-center suburbs">Shepparton</div>
     </div>
 
     <div class="row justify-content-between align-items-center map">
-        <div class="col-3 text-center h4">Bendigo</div>
-        <div class="col-3 text-center h4"><img src="images/victoria.png" alt="Victoria map"></div>
-        <div class="col-3 text-center h4">Mildura</div>
+        <div class="col-3 text-center suburbs">Bendigo</div>
+        <div class="col-3 text-center suburbs"><img src="images/victoria.jpg" alt="Victoria map"></div>
+        <div class="col-3 text-center suburbs">Mildura</div>
     </div>
 
     <div class="row justify-content-between align-item-center">
-        <div class="col text-center h4">Swan hill</div>
-        <div class="col text-center h4">Gisborne</div>
+        <div class="col text-center suburbs">Swan hill</div>
+        <div class="col text-center suburbs">Gisborne</div>
     </div>
-    <div class=" text-center h4">Horsham</div>
+    <div class=" text-center suburbs">Horsham</div>
 
 </div>
 
@@ -235,24 +259,35 @@
 <div class="space"></div>
 
 <!--Gallery-->
-<div class="mb-5">
-    <p class="pt-5 text-center m-3 display-4">Gallery</p>
-    <div class="underline m-auto"></div>
-</div>
 
+<!--<div class="container-fluid">-->
+    <div class="project">
 
-<div class="container-fluid">
-    <div class="d-flex flex-wrap justify-content-center">
-        <div><img src="images/Granite_Small.jpg" alt="Granite Small" width="300"></div>
-        <div><img src="images/Gun_Metal.JPG" alt="Gun Metal" width="300"></div>
-        <div><img src="images/Hyper_Flake.4.jpg" alt="Hyper Flake" width="300"></div>
-        <div><img src="images/Hyper_Flake.jpeg" alt="Hyper Flake" width="300"></div>
-        <div><img src="images/Ice_White_2.jpg" alt="Ice White" width="300"></div>
-        <div><img src="images/Plain_Coat_System.jpg" alt="Plain Coat System" width="300"></div>
-        <div><img src="images/Suede_Merino_Base.jpg" alt="Suede Merino Base" width="300"></div>
-        <div><img src="images/Ultra_Flake_2.jpeg" alt="Ultra Flake" width="300"></div>
+        <div class="project-img"><img src="images/Granite_Small.jpg" alt="Granite Small"></div>
+        <div  class="project-img"><img src="images/Gun_Metal.JPG" alt="Gun Metal"></div>
+
+        <div class="project-img"><img src="images/Hyper-my.jpg" alt="Hyper Flake"></div>
+        <div class="project-img"><img src="images/Ultra_Flake_2.jpeg" alt="Ultra Flake"></div>
+
+        <div class="project-img"><img src="images/Ice_White_2.jpg" alt="Ice White"></div>
+        <div class="project-img"><img src="images/0104.jpg" alt="Suede Merino Base"></div>
+
+        <div class="project-img"><img src="images/0102.jpg" alt="Suede Merino Base"></div>
+        <div class="project-img"><img src="images/Suede_Merino_Base.jpg" alt="Suede Merino Base"></div>
+
+        <div class="project-img"><img src="images/0101.jpg" alt="Suede Merino Base"></div>
+        <div class="project-img"><img src="images/Plain_Coat_System.jpg" alt="Plain Coat System"></div>
+
+        <div class="project-img"><img src="images/0108.jpg" alt="Plain Coat System"></div>
+        <div class="project-img"><img src="images/0107.jpg" alt="Suede Merino Base"></div>
+
+        <div class="project-img"><img src="images/0106.jpg" alt="Suede Merino Base"></div>
+        <div class="project-img"><img src="images/0201.jpg" alt="Suede Merino Base"></div>
+
+        <div class="project-img"><img src="images/0202.jpg" alt="Suede Merino Base"></div>
+        <div class="project-img"><img src="images/0203.jpg" alt="Suede Merino Base"></div>
     </div>
-</div>
+<!--</div>-->
 <!--end of Gallery-->
 
 
@@ -270,11 +305,11 @@
 
 
 <!--contact form-->
-<section class="contact">
+<section class="contact" id="contacts">
     <div class="contact-wrapper">
         <div class="contact-left"></div>
         <div class="contact-right">
-            <h2 class="contact-heading">Contact</h2>
+            <h2 class="contact-heading">Get a Quote Now</h2>
             <form>
                 <div class="input-group">
                     <input type="text" class="field" />
@@ -321,13 +356,32 @@
 <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-
-
 <script src="script.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
 </script>
 
 </body>
