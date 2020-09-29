@@ -278,6 +278,11 @@ body {
     url(images/Ice_White.jpg) center no-repeat;
     background-size: cover;
 }
+@media(max-width: 930px) {
+    .contact-wrapper {
+        width: 90%;
+    }
+}
 
 .contact-right {
     width: 65%;
@@ -285,12 +290,26 @@ body {
     padding: 1rem 3rem 3rem 3rem;
 }
 
+
 .contact-heading {
     font-size: 3rem;
     font-weight: 300;
     color: #272727;
     margin-bottom: 3rem;
     text-align: center;
+}
+
+@media(max-width: 600px) {
+    .contact-left {
+        display: none;
+    }
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+    }
 }
 
 .contact-right form {
@@ -427,6 +446,3 @@ body {
 }
 
 
-footer {
-    /*font-size: 1.4rem;*/
-}
