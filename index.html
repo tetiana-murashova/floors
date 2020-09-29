@@ -35,11 +35,12 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
-            <a class="nav-link mx-1" href="#">MATERIALS</a>
-            <a class="nav-link mx-1" href="#contacts">CONTACTS</a>
-            <a class="nav-link" href="#" ><i class="fab  fa-facebook-f px-1"></i>Facebook</a>
-            <a class="nav-link"  href="tel:0432626446" target="_self" ><i class="fas  fa-spin fa-phone px-1"></i> 0432 626 446</a>
+<!--            <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>-->
+<!--            <a class="nav-link mx-1" href="#">MATERIALS</a>-->
+<!--            <a class="nav-link mx-1" href="#contacts">CONTACTS</a>-->
+            <a class="nav-link active" href="#" ><i class="far fa-envelope px-2"></i>Email us</a>
+            <a class="nav-link active" href="#" ><i class="fab fa-facebook-f px-2"></i>Facebook</a>
+            <a class="nav-link active"  href="tel:0432626446" target="_self" ><i class="fas  fa-spin fa-phone px-1"></i> 0432 626 446</a>
 
         </div>
     </div>
@@ -54,7 +55,7 @@
     </div>
     <div class="banner">
         <h1>JB Epoxy Floors</h1>
-        <p>The best epoxy floor you have ever seen.</p>
+        <p>The best epoxy floors you have ever seen.</p>
         <button  onclick="document.location='#contacts'">Get a quote</button>
     </div>
 </header>
@@ -341,13 +342,34 @@
 
 <!--end of google maps-->
 
+<!--brands-->
+<div class="container-fluid bg-dark">
+    <div class="display-4 text-light p-5" >brands will be here</div>
+</div>
+
+<!--end of brands-->
+
 <!-- footer -->
 <footer class="bg-dark text-light">
-    <div class="container">
-    <p>&#169; Created by DiTec Solutions</p>
+    <div class="container justify-content-between row p-5">
+        <div class="col-3">
+        <h5>JB Epoxy Floors</h5>
+<div> For the best epoxy floors you’ll ever see… call JB!</div>
+        </div>
+        <div class="col-4">
+            <a class="text-light" href="mailto:joel@jb-painting.com.au"><i class="far fa-envelope p-2"></i>joel@jb-painting.com.au</a><br />
+            <a class="text-light" href="tel:0432626446" target="_self" ><i class="fas fa-phone p-2"></i> Phone Joel  0432 626 446</a><br />
+            <a class="text-light" href="https://www.facebook.com/jbpaintinganddecoratingbendigo/"><i class="fab fa-facebook-f p-2"></i>Facebook</a>
+            <div><i class="fab fa-instagram-square p-2"></i>Instagram</div>
+        </div>
     </div>
-    <a href="#" class="scroll-btn d-flex justify-content-center align-items-center">
-        <i class="fas fa-arrow-up"></i>
+    <div class="col-4 p-3">&#169; Created by <a class="text-light" href="https://www.ditecsolutions.co/"> DiTec Solutions </a></div>
+    <a href="#" class="icon-btn icon-btn-f d-flex justify-content-center align-items-center">
+<!--        <i class="fas fa-arrow-up"></i>-->
+        <i class="fab fa-facebook-square"></i>
+        </a>
+    <a href="#" class="icon-btn icon-btn-i d-flex justify-content-center align-items-center">
+        <i class="fab fa-instagram-square"></i>
     </a>
 </footer>
 <!-- end of footer -->
@@ -361,28 +383,7 @@
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-    });
+    AOS.init();
 </script>
 
 </body>

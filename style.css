@@ -12,6 +12,9 @@
     list-style: none;
     text-decoration: none;
 }
+a {
+    text-decoration: none;
+}
 
 html,
 body {
@@ -366,31 +369,38 @@ body {
 
 
 /* google maps*/
-.mapouter{
-    position:relative;
-    height:500px;
-    width:100vw;
-}
-.gmap_canvas {
-    overflow:hidden;
-    height:500px;
-    width:100vw;
-}
+
+/*.mapouter{*/
+/*    position:relative;*/
+/*    height:500px;*/
+/*    width:100vw;*/
+/*}*/
+/*.gmap_canvas {*/
+/*    overflow:hidden;*/
+/*    height:500px;*/
+/*    width:100vw;*/
+/*}*/
 
 /*end of google maps*/
-
-.scroll-btn {
+.icon-btn {
+    text-decoration: none;
     position: fixed;
-    right: 3rem;
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background-color: var(--second-color);
-    font-size: 2rem;
-    color: #fff;
+    color: var(--second-color);
+    font-size: 3rem;
+    background-color: #fff;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
 }
+.icon-btn-f {
+    right: 2rem;
+}
+.icon-btn-i {
+    right: 6rem;
+}
+
 /* end of footer */
 
 
@@ -414,4 +424,9 @@ body {
 
 .heading:hover {
     opacity: 1;
+}
+
+
+footer {
+    /*font-size: 1.4rem;*/
 }
