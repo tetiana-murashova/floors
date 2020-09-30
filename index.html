@@ -10,6 +10,7 @@
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--end of bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!--    scroll  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -36,11 +37,11 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
-            <a class="nav-link mx-1" href="#">TEXTURES</a>
+            <a class="nav-link mx-1" href="#textures">TEXTURES</a>
             <a class="nav-link mx-1" href="#contacts">CONTACTS</a>
 <!--            <a class="nav-link active" href="mailto:joel@jb-painting.com.au" ><i class="far fa-envelope px-2"></i>Email us</a>-->
 <!--            <a class="nav-link active" href="https://www.facebook.com/jbpaintinganddecoratingbendigo/" target="_blank" ><i class="fab fa-facebook-f px-2"></i>Facebook</a>-->
-      <a class="nav-link active"  id="phone" href="tel:0432626446" target="_self" ><i class="fas fa-hover fa-phone px-1"></i> 0432 626 446</a>
+      <a class="nav-link active"  id="phone" href="tel:0432626446" target="_self" ><i class="fas fa-hover fa-phone-alt px-1"></i> 0432 626 446</a>
 
         </div>
     </div>
@@ -129,9 +130,9 @@
 
 <!--end of map-->
 
-
+<div class="space"></div>
 <!--textures-->
-    <div class="display-4 p-5 text-center m-3" id="projects">
+    <div class="display-4 p-5 text-center m-3" id="textures">
         <p>Textures</p>
         <div class="underline m-auto"></div>
     </div>
@@ -212,19 +213,55 @@
 <!-- our projects -->
 
 
-<div class=" mx-5">
+<div class="mx-5">
     <p class="display-4  text-center ">Our Projects</p>
     <div class="underline m-auto"></div>
     <div class="space"></div>
+</div>
 
-    <div class="material">
+<div>
+    <div class="d-flex flex-column-reverse flex-md-row big-img" id="big_image">
         <img src="images/Hyper_Flake.jpeg" alt="Hyper Flake">
+
+
+
         <p class="text-right p-3 m-3">
             The Epoxy floor services, mechanical workshop floors oil and fuel resistant, kitchen and food processing anti slip and easy to maintain, garage and outdoor entertaining areas modern and long lasting.
                 Different finishes include hyper flake, flake flooring, metallic flooring and plain colour.
         </p>
-
+    </div>
 </div>
+
+        <div class="d-flex flex-wrap justify-content-center">
+
+            <figure tabindex="1" class="vkl2" id="img1" ><img src="images/Ultra_Flake_2.jpeg" alt="Ultra Flake" /></figure>
+            <figure tabindex="2" class="vkl2" id="img2"><img src="images/Gun_Metal.JPG" alt="Gun Metal" /></figure>
+            <figure tabindex="3" class="vkl2" id="img3"><img src="images/Hyper_Flake.jpeg" alt="Hyper Flake" /></figure>
+
+            <figure tabindex="4" class="vkl2" id="img4"><img src="images/Hyper_Flake.4.jpg" alt="Hyper Flake" /></figure>
+            <figure tabindex="5" class="vkl2" id="img5"><img src="images/Granite_Small.jpg" alt="Granite Small" /></figure>
+            <figure tabindex="6" class="vkl2" id="img6"><img src="images/Ice_White_2.jpg" alt="Ice White" /></figure>
+
+            <figure tabindex="7" class="vkl2" id="img7"><img src="images/0104.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="8" class="vkl2" id="img8"><img src="images/0102.jpg" alt="Suede Merino Base" /></figure>
+
+            <figure tabindex="9" class="vkl2" id="img9"><img src="images/Suede_Merino_Base.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="10" class="vkl2" id="img10"><img src="images/0101.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="11" class="vkl2" id="img11"><img src="images/Plain_Coat_System.jpg" alt="Plain Coat System" /></figure>
+            <figure tabindex="12" class="vkl2" id="img12"><img src="images/0108.jpg" alt="Plain Coat System" /></figure>
+            <figure tabindex="13" class="vkl2" id="img13"><img src="images/0107.jpg" alt="Suede Merino Base" /></figure>
+
+            <figure tabindex="13" class="vkl2" id="img14"><img src="images/0106.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="13" class="vkl2" id="img15"><img src="images/0201.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="13" class="vkl2" id="img16"><img src="images/0202.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="13" class="vkl2" id="img17"><img src="images/0203.jpg" alt="Suede Merino Base" /></figure>
+
+        </div>
+
+
+
+
+
 
 <!--end of our projects-->
 <div class="space"></div>
@@ -235,45 +272,15 @@
              data-aos-duration="1000"-->
 
     <div class="container-fluid">
-        <div class="d-flex flex-wrap justify-content-center">
 
-            <div><img src="images/Ultra_Flake_2.jpeg" alt="Ultra Flake" width="300"></div>
-            <div><img src="images/Gun_Metal.JPG" alt="Gun Metal" width="300"></div>
 
-            <div><img src="images/Hyper_Flake.jpeg" alt="Hyper Flake" width="300"></div>
-            <div><img src="images/Hyper_Flake.4.jpg" alt="Hyper Flake" width="300"></div>
-            <div
-                    data-aos="flip-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-            ><img src="images/Granite_Small.jpg" alt="Granite Small" width="300"></div>
 
-            <div><img src="images/Ice_White_2.jpg" alt="Ice White" width="300"></div>
-            <div><img src="images/0104.jpg" alt="Suede Merino Base" width="300"></div>
 
-            <div><img src="images/0102.jpg" alt="Suede Merino Base" width="300"></div>
-            <div><img src="images/Suede_Merino_Base.jpg" alt="Suede Merino Base" width="300"></div>
 
-            <div><img src="images/0101.jpg" alt="Suede Merino Base" width="300"></div>
-            <div
-                    data-aos="flip-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-            ><img src="images/Plain_Coat_System.jpg" alt="Plain Coat System" width="300"></div>
 
-            <div><img src="images/0108.jpg" alt="Plain Coat System" width="300"></div>
-            <div><img src="images/0107.jpg" alt="Suede Merino Base" width="300"></div>
 
-            <div><img src="images/0106.jpg" alt="Suede Merino Base" width="300"></div>
-            <div><img src="images/0201.jpg" alt="Suede Merino Base" width="300"></div>
 
-            <div><img src="images/0202.jpg" alt="Suede Merino Base" width="300"></div>
-            <div
-                    data-aos="flip-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-            ><img src="images/0203.jpg" alt="Suede Merino Base" width="300"></div>
-        </div>
+
     </div>
 <!--end of Gallery-->
 
@@ -307,6 +314,10 @@
                     <label class="input-label">Email</label>
                 </div>
                 <div class="input-group">
+                    <input type="phone" class="field" />
+                    <label class="input-label">Phone</label>
+                </div>
+                <div class="input-group">
                     <textarea class="field"></textarea>
                     <label class="message">Message</label>
                 </div>
@@ -327,7 +338,7 @@
         <img src="images/newimage.png" alt="newimage logo" height="70">
         <img src="images/nutech_banner_logo.png" alt="newtach logo" height="70">
     </div>
-    <div style="height: 100px"></div>
+   <div class="space"></div>
 
 </div>
 
@@ -367,9 +378,8 @@
 <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<script src="script.js"></script>
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 <script>
     AOS.init();
 </script>
