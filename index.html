@@ -10,7 +10,8 @@
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--end of bootstrap-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 
 <!--    scroll  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -30,7 +31,7 @@
 
 <!-- navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-0">
-    <a class="navbar-brand" href="#"><img src="images/JB-Floor_logo-365pxW-02.png" alt="logo"></a>
+    <a class="logo" href="index.html"><img src="images/JB-Floor_logo-365pxW-02.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,6 +39,8 @@
         <div class="navbar-nav">
             <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
             <a class="nav-link mx-1" href="#textures">TEXTURES</a>
+            <a class="nav-link mx-1" href="#projects">OUR PROJECTS</a>
+            <a class="nav-link mx-1" href="#about">ABOUT US</a>
             <a class="nav-link mx-1" href="#contacts">CONTACTS</a>
 <!--            <a class="nav-link active" href="mailto:joel@jb-painting.com.au" ><i class="far fa-envelope px-2"></i>Email us</a>-->
 <!--            <a class="nav-link active" href="https://www.facebook.com/jbpaintinganddecoratingbendigo/" target="_blank" ><i class="fab fa-facebook-f px-2"></i>Facebook</a>-->
@@ -66,23 +69,23 @@
 <!--three icons-->
 <div class="row text-center three-icon m-auto">
 
-    <div class="pt-5 col-md-4 col-sm-10 m-auto three-icon-1">
+    <div class="pt-5 col-md-4 col-10 m-auto three-icon-1">
         <div class="mb-5 text-light">
-            <i class="fas fa-tint fa-6x mb-3"></i>
+            <i class="fas fa-tint fa-5x mb-3"></i>
             <p>Oil and fuel resistant</p>
         </div>
     </div>
 
-    <div class="pt-5 col-md-4 col-sm-10 m-auto three-icon-2">
+    <div class="pt-5 col-md-4 col-10 m-auto three-icon-2">
         <div class="mb-5 text-light">
-            <i class="fas fa-paint-roller fa-6x  mb-3"></i>
+            <i class="fas fa-paint-roller fa-5x  mb-3"></i>
             <p>Anti slip and easy to maintain</p>
         </div>
     </div>
 
-    <div class="pt-5 col-md-4 col-sm-10 m-auto three-icon-3">
+    <div class="pt-5 col-md-4 col-10 m-auto three-icon-3">
         <div class="mb-5 text-dark">
-            <i class="fas fa-chevron-down fa-6x mb-3"></i>
+            <i class="fas fa-chevron-down fa-5x mb-3"></i>
             <p>Modern and long lasting</p>
         </div>
     </div>
@@ -92,6 +95,7 @@
 <!--end of three icons-->
 
 <!-- about us -->
+<div class="space-2" id="about"></div>
 <div class="container">
 <div>
     <p class="pt-5 text-center m-3 display-4">About Us</p>
@@ -105,7 +109,7 @@
 <!--end of about us -->
 
 <!--map-->
-<div class="container my-5">
+<div class="container m-auto col-10">
 
     <div class="text-center suburbs">Ballarat</div>
 
@@ -130,9 +134,9 @@
 
 <!--end of map-->
 
-<div class="space"></div>
+<div class="space" id="textures"></div>
 <!--textures-->
-    <div class="display-4 p-5 text-center m-3" id="textures">
+    <div class="display-4 p-5 text-center m-3">
         <p>Textures</p>
         <div class="underline m-auto"></div>
     </div>
@@ -207,7 +211,7 @@
 <button type="button" class="choose_color-btn my-5" onClick="document.location='http://epoxysupplies.com.au/downloads/SampleBrochure.pdf'">Ultra Flake Brochure Download <i class="fas fa-angle-double-right btn-arrow"></i></button>
 <br />
 
-<div class="space"></div>
+<div class="space" id="projects"></div>
 
 
 <!-- our projects -->
@@ -216,55 +220,55 @@
 <div class="mx-5">
     <p class="display-4  text-center ">Our Projects</p>
     <div class="underline m-auto"></div>
-    <div class="space"></div>
+    <div class="space d-none d-md-block" ></div>
 </div>
 
 <div>
-    <div class="d-flex flex-column-reverse flex-md-row big-img" >
+    <div class="d-flex flex-column-reverse flex-md-row justify-content-around big-img" >
         <div class="bg-big-img" id="big_image">
             <img src="images/Hyper_Flake.jpeg" alt="Hyper Flake">
         </div>
 
 
-        <p class="text-right p-5 m-5">
+        <p class="text-center text-md-right p-5 ml-5">
             The Epoxy floor services, mechanical workshop floors oil and fuel resistant, kitchen and food processing anti slip and easy to maintain, garage and outdoor entertaining areas modern and long lasting.
                 Different finishes include hyper flake, flake flooring, metallic flooring and plain colour.
         </p>
     </div>
 </div>
 
-<div class="space"></div>
+<div style="height: 70px"></div>
 
         <div class="d-flex flex-wrap justify-content-center">
 
-            <figure tabindex="1" class="vkl2" id="img1" ><img src="images/0101.jpg" alt="Ultra Flake" /></figure>
-            <figure tabindex="2" class="vkl2" id="img2"><img src="images/0102.jpg" alt="Gun Metal" /></figure>
-            <figure tabindex="3" class="vkl2" id="img3"><img src="images/0103.jpg" alt="Hyper Flake" /></figure>
-            <figure tabindex="4" class="vkl2" id="img4"><img src="images/0104.jpg" alt="Hyper Flake" /></figure>
+            <figure tabindex="1" class="vkl2" id="img1" ><img src="images/0101-min.jpg" alt="Ultra Flake" /></figure>
+            <figure tabindex="2" class="vkl2" id="img2"><img src="images/0102-min.jpg" alt="Gun Metal" /></figure>
+            <figure tabindex="3" class="vkl2" id="img3"><img src="images/0103-min.jpg" alt="Hyper Flake" /></figure>
+            <figure tabindex="4" class="vkl2" id="img4"><img src="images/0104-min.jpg" alt="Hyper Flake" /></figure>
 
-            <figure tabindex="5" class="vkl2" id="img5"><img src="images/0105.jpg" alt="Granite Small" /></figure>
-            <figure tabindex="6" class="vkl2" id="img6"><img src="images/0106.jpg" alt="Ice White" /></figure>
-            <figure tabindex="7" class="vkl2" id="img7"><img src="images/0107.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="8" class="vkl2" id="img8"><img src="images/0108.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="5" class="vkl2" id="img5"><img src="images/0105-min.jpg" alt="Granite Small" /></figure>
+            <figure tabindex="6" class="vkl2" id="img6"><img src="images/0106-min.jpg" alt="Ice White" /></figure>
+            <figure tabindex="7" class="vkl2" id="img7"><img src="images/0107-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="8" class="vkl2" id="img8"><img src="images/0108-min.jpg" alt="Suede Merino Base" /></figure>
 
-            <figure tabindex="9" class="vkl2" id="img9"><img src="images/0109.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="10" class="vkl2" id="img10"><img src="images/0201.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="11" class="vkl2" id="img11"><img src="images/0202.jpg" alt="Plain Coat System" /></figure>
-            <figure tabindex="12" class="vkl2" id="img12"><img src="images/0203.jpg" alt="Plain Coat System" /></figure>
+            <figure tabindex="9" class="vkl2" id="img9"><img src="images/0109-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="10" class="vkl2" id="img10"><img src="images/0201-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="11" class="vkl2" id="img11"><img src="images/0202-min.jpg" alt="Plain Coat System" /></figure>
+            <figure tabindex="12" class="vkl2" id="img12"><img src="images/0203-min.jpg" alt="Plain Coat System" /></figure>
 
-            <figure tabindex="13" class="vkl2" id="img13"><img src="images/0204.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="14" class="vkl2" id="img14"><img src="images/0205.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="15" class="vkl2" id="img15"><img src="images/0206.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="16" class="vkl2" id="img16"><img src="images/0207.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="13" class="vkl2" id="img13"><img src="images/0204-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="14" class="vkl2" id="img14"><img src="images/0205-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="15" class="vkl2" id="img15"><img src="images/0206-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="16" class="vkl2" id="img16"><img src="images/0207-min.jpg" alt="Suede Merino Base" /></figure>
 
-            <figure tabindex="17" class="vkl2" id="img17"><img src="images/0208.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="18" class="vkl2" id="img18"><img src="images/0209.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="19" class="vkl2" id="img19"><img src="images/0301.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="20" class="vkl2" id="img20"><img src="images/0302.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="17" class="vkl2" id="img17"><img src="images/0208-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="18" class="vkl2" id="img18"><img src="images/0209-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="19" class="vkl2" id="img19"><img src="images/0301-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="20" class="vkl2" id="img20"><img src="images/0302-min.jpg" alt="Suede Merino Base" /></figure>
 
-            <figure tabindex="21" class="vkl2" id="img21"><img src="images/0303.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="22" class="vkl2" id="img22"><img src="images/0304.jpg" alt="Suede Merino Base" /></figure>
-            <figure tabindex="23" class="vkl2" id="img23"><img src="images/0305.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="21" class="vkl2" id="img21"><img src="images/0303-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="22" class="vkl2" id="img22"><img src="images/0304-min.jpg" alt="Suede Merino Base" /></figure>
+            <figure tabindex="23" class="vkl2" id="img23"><img src="images/0305-min.jpg" alt="Suede Merino Base" /></figure>
 
         </div>
 
@@ -274,7 +278,7 @@
 
 
 <!--end of our projects-->
-<div class="space"></div>
+<div class="space d-none d-md-block" ></div> <!--space-->
 
 <!--Gallery-->
 
@@ -282,15 +286,16 @@
 
 
 <!-- our team -->
-<div>
-    <p class="pt-5 text-center m-3 display-4">Our Team</p>
-    <div class="underline m-auto"></div>
-</div>
-<p class="p-5 col-9 m-auto text-center">
+
+<!--<div>-->
+<!--    <p class="pt-5 text-center m-3 display-4">Our Team</p>-->
+<!--    <div class="underline m-auto"></div>-->
+<!--</div>-->
+<p class="p-5 col-10 col-md-9 m-auto text-center">
     We are always striving to maintain our market-leading reputation and delivery of high-quality epoxy floor finishes. Our continued investment, in equipment and training of our team members, leads to providing the highest-performing, environmentally-friendly and cost-effective epoxy floor covering solutions.
 </p>
 <!--our team -->
-<div class="space"></div>  <!--space-->
+<div class="space d-none d-md-block" ></div> <!--space-->
 
 
 
@@ -300,25 +305,27 @@
         <div class="contact-left"></div>
         <div class="contact-right">
             <h2 class="contact-heading">Contact Us</h2>
-            <form>
+            <form id="reused_form" onsubmit="return validateForm()" method="post" action="contact.php">
                 <div class="input-group">
-                    <input type="text" class="field" required />
-                    <label class="input-label">Full Name</label>
+                    <input type="text" class="field" id="name" name="name" required />
+                    <label class="input-label" for="name">Full Name</label>
                 </div>
                 <div class="input-group">
-                    <input type="email" class="field"  required />
-                    <label class="input-label">Email</label>
+                    <input type="email" class="field" id="email" name="email" required />
+                    <label class="input-label" for="email">Email</label>
                 </div>
                 <div class="input-group">
-                    <input type="tel" class="field"  required />
-                    <label class="input-label">Phone</label>
+                    <input type="tel" class="field" id="tel" name="tel" type="tel"  required />
+                    <label class="input-label" for="tel">Phone</label>
                 </div>
                 <div class="input-group">
-                    <textarea class="field"  required ></textarea>
-                    <label class="message">Message</label>
+                    <textarea class="field" maxlength="6000" id="message" name="message"  required ></textarea>
+                    <label class="message"  for="message">Message</label>
                 </div>
-                <input type="submit" class="submit-btn" value="Submit" />
+                <input type="submit" class="submit-btn" value="Submit"  />
             </form>
+
+
         </div>
     </div>
 </section>
@@ -328,21 +335,22 @@
 
 <div class="container-fluid bg-dark">
 
-    <div class="d-flex text-light p-5 row justify-content-around flex-wrap">
+    <div class="d-flex text-light flex-column py-5 row justify-content-around flex-md-row align-items-center brands">
         <a href="https://www.epoxysupplies.com.au" target="_blank">
-            <img class="m-3" src="images/all-purpose-coatings-logo.png" alt="apc logo" height="70">
+            <img class="m-3" src="images/all-purpose-coatings-logo.png" alt="apc logo">
         </a>
         <a href="https://www.haymespaint.com.au/" target="_blank">
-            <img class="m-3" src="images/logo-haymes-300px.png" alt="haymes logo" height="70">
+            <img class="m-3" src="images/logo-haymes-300px.png" alt="haymes logo">
         </a>
         <a href="https://www.dulux.com.au/" target="_blank">
-            <img class="m-3" src="images/newimage.png" alt="dulux logo" height="70">
+            <img class="m-3" src="images/newimage.png" alt="dulux logo">
         </a>
         <a href="https://nutechpaint.com.au/" target="_blank">
-            <img class="m-3" src="images/nutech_banner_logo.png" alt="newtach logo" height="70">
+            <img class="m-3" src="images/nutech_banner_logo.png" alt="newtach logo">
         </a>
-    </div>
-   <div class="space"></div>
+
+</div>
+   <div class="space-2"></div>
 
 </div>
 
@@ -353,18 +361,18 @@
     <div class="container justify-content-between d-flex p-5  flex-column flex-md-row">
         <div class="col-10 col-md-6">
         <h5>JB Epoxy Floors</h5>
-<div> For the best epoxy floors you’ll ever see… call JB!</div>
+        <div> For the best epoxy floors you’ll ever see… call JB!</div>
             <br />
         <br />
         </div>
-        <div class="col-10 col-md-6">
+        <div class="col-11 col-md-6">
             <a class="text-light" href="mailto:joel@jb-painting.com.au"><i class="far fa-envelope p-2"></i>joel@jb-painting.com.au</a><br />
-            <a class="text-light" href="tel:0432626446" target="_self" ><i class="fas fa-phone p-2"></i> Phone Joel  0432 626 446</a><br />
+            <a class="text-light" href="tel:0432626446" target="_self" ><i class="fas fa-phone p-2"></i>0432 626 446 Phone Joel </a><br />
             <a class="text-light" href="https://www.facebook.com/jbpaintinganddecoratingbendigo/"><i class="fab fa-facebook-f p-2"></i>Facebook</a><br />
             <a class="text-light" href="#" target="_blank"><i class="fab fa-instagram-square p-2"></i>Instagram</a>
         </div>
     </div>
-    <div class="col-4 p-3">&#169; Created by <a class="text-light" href="https://www.ditecsolutions.co/" target="_blank"> DiTec Solutions </a></div>
+    <div class="col-10 col-md-4 p-3">&#169; Created by <a class="text-light" href="https://www.ditecsolutions.co/" target="_blank"> DiTec Solutions </a></div>
 
     <a href="#" class="scroll-btn">
         <i class="fas fa-arrow-up"></i>
@@ -386,8 +394,15 @@
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
-<script>
-    AOS.init();
+
+<script language="JavaScript">
+    let frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("email","req","Please provide your email");
+    frmvalidator.addValidation("tel","maxlen=50");
+    frmvalidator.addValidation("tel","numeric");
+    frmvalidator.addValidation("email","email",
+        "Please enter a valid email address");
 </script>
 
 </body>

@@ -24,12 +24,20 @@ body {
 .space {
     height: 100px;
 }
-
-/*  navigation */
-.navbar-brand img {
-    width: 80%;
+.space-2 {
+    height: 100px;
 }
 
+@media(max-width: 763px) {
+    .space-2 {
+        height: 10px;
+    }
+}
+
+/*  navigation */
+.logo img {
+    width: 290px;
+}
 
 .navbar {
     background-color: var(--main-color);
@@ -74,6 +82,18 @@ body {
     position: absolute;
     top: 40%;
     left: 15%;
+}
+
+@media(max-width: 600px) {
+    .logo img {
+        width: 240px;
+    }
+
+    .banner {
+
+        top: 30%;
+        left: 12%;
+    }
 }
 
 .banner h1 {
@@ -129,20 +149,16 @@ body {
 .three-icon {
     width: 80%;
     position: relative;
-    top: -70px;
+    top: -20px;
 }
 
 .three-icon p {
     padding-top: 2rem;
-font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 .three-icon-1 {
     background-color: rgb(47, 47, 47);
     height: 320px;
-}
-.three-icon-1:hover,.three-icon-2:hover,.three-icon-3:hover {
-    background-color: var(--light-color);
-
 }
 
 .three-icon-2 {
@@ -153,6 +169,23 @@ font-size: 1.8rem;
 .three-icon-3 {
     background-color: rgb(200, 200, 200);
     height: 320px;
+}
+
+@media(max-width: 768px) {
+    .three-icon i {
+        /*display: none;*/
+        font-size: 24px;
+        display: inline;
+        padding-right: 6px;
+    }
+
+    .three-icon p {
+        display: inline;
+    }
+
+    .three-icon-1, .three-icon-2, .three-icon-3 {
+        height: 150px;
+    }
 }
 /*end of 3 icons*/
 
@@ -271,6 +304,32 @@ font-size: 1.8rem;
     background-color: var(--second-color);
 }
 
+@media(min-width: 1000px) {
+    .bg-big-img {
+        width: 50%;
+        background-color: var(--second-color);
+    }
+}
+
+@media(min-width: 1200px) {
+    .bg-big-img {
+        width: 45%;
+        background-color: var(--second-color);
+    }
+}
+
+@media(min-width: 1400px) {
+    .bg-big-img {
+        width: 37%;
+        background-color: var(--second-color);
+    }
+}
+@media(min-width: 1600px) {
+    .bg-big-img {
+        width: 32%;
+        background-color: var(--second-color);
+    }
+}
 .bg-big-img img {
     position: relative;
     top: 30px;
@@ -289,7 +348,7 @@ font-size: 1.8rem;
     }
 
     .bg-big-img  {
-        width: 85%;
+        width: 70%;
     }
 
     .big-img p {
@@ -320,7 +379,7 @@ font-size: 1.8rem;
 .contact-left {
     width: 35%;
     background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-    url(images/Ice_White.jpg) center no-repeat;
+    url(images/0303.jpg) center no-repeat;
     background-size: cover;
 }
 @media(max-width: 930px) {
@@ -431,10 +490,21 @@ font-size: 1.8rem;
 }
 /*end of contact form*/
 
+/* brands */
+.brands img {
+    height: 68px;
+}
 
+@media(max-width: 600px) {
+    .brands img{
+        height: 58px;
+    }
+}
+
+/* end of brands */
 
 .icon-btn {
-    right: 2rem;
+    right: 1.5rem;
     text-decoration: none;
     position: fixed;
     font-size: 3rem;
@@ -450,7 +520,7 @@ font-size: 1.8rem;
 .scroll-btn {
     z-index: 5;
     position: fixed;
-    right: 2rem;
+    right: 1.5rem;
     bottom: 2rem;
     width: 3rem;
     height: 3rem;
@@ -467,9 +537,14 @@ font-size: 1.8rem;
     bottom: 6rem;
 }
 .icon-btn-i {
-    bottom: 9rem;
+    bottom: 9.5rem;
 }
 
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--light-color);
+}
 /* end of footer */
 
 
@@ -492,12 +567,3 @@ figure.vkl2:hover {
     box-shadow: 0 2px 3px #666;
 }
 
-/*figure.vkl2:focus {*/
-/*    -webkit-transform:  scale(4.5);*/
-/*    -moz-transform:  scale(4.5);*/
-/*    -o-transform:  scale(4.5);*/
-/*    -ms-transform: scale(4.5);*/
-/*    box-shadow: 0 2px 3px #666;*/
-/*    z-index: 4;*/
-
-/*}*/
