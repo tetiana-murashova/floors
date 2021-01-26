@@ -2,16 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165860138-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165860138-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/title.png">
 
     <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--end of bootstrap-->
-
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 
 <!--    scroll  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -32,16 +40,16 @@
 <!-- navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-0">
     <a class="logo" href="index.html"><img src="images/JB-Floor_logo-365pxW-02.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler collapsed" onclick="collapsNav();" type="button" data-toggle="collapse"  aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarAddShow">
         <div class="navbar-nav">
-            <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
-            <a class="nav-link mx-1" href="#textures">TEXTURES</a>
-            <a class="nav-link mx-1" href="#projects">OUR PROJECTS</a>
-            <a class="nav-link mx-1" href="#about">ABOUT US</a>
-            <a class="nav-link mx-1" href="#contacts">CONTACTS</a>
+            <a class="nav-link active" href="index.html" onclick="removeNav();">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link mx-1" href="#textures"  onclick="removeNav();">TEXTURES</a>
+            <a class="nav-link mx-1" href="#projects" onclick="removeNav();">OUR PROJECTS</a>
+            <a class="nav-link mx-1" href="#about" onclick="removeNav();">ABOUT US</a>
+            <a class="nav-link mx-1" href="#contacts" onclick="removeNav();">CONTACTS</a>
 <!--            <a class="nav-link active" href="mailto:joel@jb-painting.com.au" ><i class="far fa-envelope px-2"></i>Email us</a>-->
 <!--            <a class="nav-link active" href="https://www.facebook.com/jbpaintinganddecoratingbendigo/" target="_blank" ><i class="fab fa-facebook-f px-2"></i>Facebook</a>-->
       <a class="nav-link active"  id="phone" href="tel:0432626446" target="_self" ><i class="fas fa-hover fa-phone-alt px-1"></i> 0432 626 446</a>
@@ -157,7 +165,7 @@
          data-aos-duration="2000"
     >
 <!--        Hyper Flake -->
-        <div class="floor-image">
+        <div class="floor-image py-2 py-md-0">
             <a href="https://www.hyperflake.com.au/" target="_blank">
                 <div class="card border-0 card-shadow">
                 <img src="images/Hyper_Flake.jpeg" alt="Hyper Flake Floor" class="card-img">
@@ -169,7 +177,7 @@
         </div>
 
         <!--        Gun Metal -->
-        <div class="floor-image">
+        <div class="floor-image py-2 py-md-0">
             <a href="http://www.metallicepoxy.com.au" target="_blank">
                 <div class="card border-0 card-shadow">
                     <img src="images/Gun_Metal.JPG" alt="Gun Metal Floor">
@@ -181,7 +189,7 @@
         </div>
 
         <!--        Ultra Flake -->
-        <div class="floor-image">
+        <div class="floor-image py-2 py-md-0">
             <a href="http://www.ultraflake.com.au" target="_blank">
                 <div class="card border-0 card-shadow">
                     <img src="images/Ultra_Flake_2.jpeg" alt="Plain Coat System Floor">
@@ -193,7 +201,7 @@
         </div>
 
 <!--Plain Coat System-->
-        <div class="floor-image">
+        <div class="floor-image py-2 py-md-0">
             <a href="http://www.plainepoxy.com.au" target="_blank">
                 <div class="card border-0 card-shadow">
                     <img src="images/Plain_Coat_System.jpg" alt="Plain Coat System">
@@ -220,20 +228,25 @@
 <div class="mx-5">
     <p class="display-4  text-center ">Our Projects</p>
     <div class="underline m-auto"></div>
-    <div class="space d-none d-md-block" ></div>
+    <div class="space d-none d-lg-block" ></div>
 </div>
 
 <div>
-    <div class="d-flex flex-column-reverse flex-md-row justify-content-around big-img" >
+    <div class="d-flex flex-column-reverse flex-lg-row justify-content-around big-img" >
         <div class="bg-big-img" id="big_image">
             <img src="images/Hyper_Flake.jpeg" alt="Hyper Flake">
         </div>
 
-
-        <p class="text-center text-md-right p-5 ml-5">
+        <p  class="text-center text-lg-right px-2 px-md-5 ml-md-5">
             The Epoxy floor services, mechanical workshop floors oil and fuel resistant, kitchen and food processing anti slip and easy to maintain, garage and outdoor entertaining areas modern and long lasting.
                 Different finishes include hyper flake, flake flooring, metallic flooring and plain colour.
+
+<br /><br />
+
+We are always striving to maintain our market-leading reputation and delivery of high-quality epoxy floor finishes. Our continued investment, in equipment and training of our team members, leads to providing
+the highest-performing, environmentally-friendly and cost-effective epoxy floor covering solutions.
         </p>
+
     </div>
 </div>
 
@@ -278,11 +291,7 @@
 
 
 <!--end of our projects-->
-<div class="space d-none d-md-block" ></div> <!--space-->
-
-<!--Gallery-->
-
-<!--end of Gallery-->
+<!--<div class="space d-none d-md-block" ></div> &lt;!&ndash;space&ndash;&gt;-->
 
 
 <!-- our team -->
@@ -291,11 +300,12 @@
 <!--    <p class="pt-5 text-center m-3 display-4">Our Team</p>-->
 <!--    <div class="underline m-auto"></div>-->
 <!--</div>-->
-<p class="p-5 col-10 col-md-9 m-auto text-center">
-    We are always striving to maintain our market-leading reputation and delivery of high-quality epoxy floor finishes. Our continued investment, in equipment and training of our team members, leads to providing the highest-performing, environmentally-friendly and cost-effective epoxy floor covering solutions.
-</p>
+<!--<p class="p-5 col-10 col-md-9 m-auto text-center">-->
+<!--    We are always striving to maintain our market-leading reputation and delivery of high-quality epoxy floor finishes. Our continued investment, in equipment and training of our team members, leads to providing the highest-performing, environmentally-friendly and cost-effective epoxy floor covering solutions.-->
+
+<!--</p>-->
 <!--our team -->
-<div class="space d-none d-md-block" ></div> <!--space-->
+<div class="space " ></div> <!--space-->
 
 
 
@@ -323,13 +333,15 @@
                     <label class="message"  for="message">Message</label>
                 </div>
                 <input type="submit" class="submit-btn" value="Submit"  />
+
             </form>
 
-
         </div>
+
     </div>
 </section>
 <!--end of contact form-->
+
 
 <!--brands-->
 
@@ -340,7 +352,7 @@
             <img class="m-3" src="images/all-purpose-coatings-logo.png" alt="apc logo">
         </a>
         <a href="https://www.haymespaint.com.au/" target="_blank">
-            <img class="m-3" src="images/logo-haymes-300px.png" alt="haymes logo">
+            <img class="m-3 p-1" src="images/logo-haymes-300px.png" alt="haymes logo">
         </a>
         <a href="https://www.dulux.com.au/" target="_blank">
             <img class="m-3" src="images/newimage.png" alt="dulux logo">
@@ -388,22 +400,19 @@
 <!-- end of footer -->
 
 <!-- Optional JavaScript -->
-<script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!--<script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>-->
+
+<!--<script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>-->
+
+
+<!--<script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
+<!--    <script src="js/jquerymin.js"></script>-->
 
-<script language="JavaScript">
-    let frmvalidator  = new Validator("contactform");
-    frmvalidator.addValidation("name","req","Please provide your name");
-    frmvalidator.addValidation("email","req","Please provide your email");
-    frmvalidator.addValidation("tel","maxlen=50");
-    frmvalidator.addValidation("tel","numeric");
-    frmvalidator.addValidation("email","email",
-        "Please enter a valid email address");
-</script>
+
 
 </body>
 
